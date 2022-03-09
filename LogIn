@@ -1,1 +1,25 @@
+Public Class Form1
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim contraseña As String = "abc123"
+        Dim usuario As String = "user1"
+        Dim resultado As Boolean
+        Dim resultado2 As Boolean
+
+        resultado = Equals(usuario, TextBox1.Text)
+        resultado2 = Equals(contraseña, TextBox2.Text)
+
+        If (resultado = True And resultado2 = True) Then
+
+            MsgBox(" El acceso es correcto ")
+
+        Else
+
+            MsgBox(" La clave o la contraseña son incorrectas. ")
+
+        End If
+
+
+    End Sub
+End Class
